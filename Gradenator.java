@@ -76,7 +76,7 @@ public class DraftPA_1 {
             // Close file scanner
             fileScanner.close();
         } catch (FileNotFoundException e) {
-            System.out.println("File not found: " + e.getMessage());
+            System.out.println("File not found:" ;
         } finally {
             // Close the user input scanner
             scanner.close();
