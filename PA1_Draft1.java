@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 
-public class gradenator {
+public class Gradenator {
     // This is the entry point of the program.
     public static void main(String[] args) throws FileNotFoundException {
         Scanner scanner = new Scanner(System.in);
