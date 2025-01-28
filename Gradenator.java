@@ -12,9 +12,6 @@ public class DraftPA_1 {
         // Read file name input from the user
         String fileName = scanner.nextLine();
         
-        // REMOVE LATER. JUST FOR TESTS.
-        System.out.println("The file name you inputted is " + fileName);
-        
         double totalPercent = 0;
         double totalWeight = 0;
         
