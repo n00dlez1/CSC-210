@@ -1,4 +1,4 @@
-ackage com.gradescope.gradenator;
+package com.gradescope.gradenator;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
