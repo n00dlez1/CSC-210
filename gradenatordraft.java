@@ -1,21 +1,21 @@
-package com.gradescope.gradenator;
+ackage com.gradescope.gradenator;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 
 public class DraftPA_1 {
     // This is the entry point of the program.
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         Scanner scanner = new Scanner(System.in);
         System.out.println("File Name?");
         
         // Read file name input from the user
         String fileName = scanner.nextLine();
         
+        
         double totalPercent = 0;
         double totalWeight = 0;
         
-        try {
             File file = new File(fileName);
             Scanner fileScanner = new Scanner(file);
 
@@ -63,7 +63,7 @@ public class DraftPA_1 {
                         String weightField = fields[2].trim().replace("%", "");
                         double weight = Double.parseDouble(weightField);
                         
-                        System.out.format("%s; %.1f%%; avg=%.1f%n",fields[1], weight, mean);
+                        System.out.format("%s; %.1f%%; avg=%.1f%n",fields[1].trim(), weight, mean);
                         
                         totalPercent += weight;
                         totalWeight += (mean * weight)/100;
@@ -75,11 +75,9 @@ public class DraftPA_1 {
             System.out.format("TOTAL = %.1f%% out of %.1f%%",totalWeight, totalPercent);
             // Close file scanner
             fileScanner.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found");
-        } finally {
-            // Close the user input scanner
+
+       
             scanner.close();
         }
     }
-}
+
