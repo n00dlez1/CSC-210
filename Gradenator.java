@@ -22,7 +22,7 @@ public class Gradenator {
             // Process each line in the file
             while (fileScanner.hasNextLine()) {
                 String line = fileScanner.nextLine();
-                int sum = 0;
+                Double sum = 0.0;
                 int count = 0;
                 String[] fields = line.split(";");
                 
