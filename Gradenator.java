@@ -1,5 +1,4 @@
 package com.gradescope.gradenator;
-
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -58,7 +57,7 @@ public class Gradenator {
 
                     // Calculate and print the mean
                     if (count > 0) {
-                        double mean = sum / count;
+                        double mean = (double) sum / count;
                         
                         
                         String weightField = fields[2].trim().replace("%", "");
@@ -67,7 +66,8 @@ public class Gradenator {
                         System.out.format("%s; %.1f%%; avg=%.1f%n",fields[1].trim(), weight, mean);
                         
                         totalPercent += weight;
-                        totalWeight += (mean * weight)/100;
+                    
+                        totalWeight += (double) (mean * weight)/100;
                     } 
                     
                 }
