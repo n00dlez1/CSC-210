@@ -38,7 +38,7 @@ public class Gradenator {
                         // When a space is encountered, process the number
                         if (currentChar == ' ') {
                             if (!currentNum.isEmpty()) {
-                                sum += Integer.parseInt(currentNum); // Add number to sum
+                                sum += Double.parseDouble(currentNum); // Add number to sum
                                 count++; // Increase count
                                 currentNum = ""; // Reset current number
                             }
@@ -49,7 +49,7 @@ public class Gradenator {
 
                     // If there's a number left at the end, process it
                     if (!currentNum.isEmpty()) {
-                        sum += Integer.parseInt(currentNum);
+                        sum += Double.parseDouble(currentNum);
                         count++;
                     }
                     
