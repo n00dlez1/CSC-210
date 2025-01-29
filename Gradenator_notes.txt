@@ -1,0 +1,14 @@
+My biggest issues with completing this were the following:
+
+ Gradescope was completely unable to parse and process the .java file submitted.
+    This was due to the fact that I had created the class name as draft_PA1. 
+    I forgot that the class name **MUST** match the file name. Capitalization DOES matter.
+
+ Completely failing test cases.
+    Very minor error. I had written it as "File Name?" instead of "File name?" 
+    This caused all test cases to fail.
+
+Failing one test case (80/100).
+    The test case that was failing was one that had a float in its list of integers (scores).
+    My error was in initializing the sum variable with int, when I should have initialized it as double,
+    so that it could handle both integers and floats.
