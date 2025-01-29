@@ -7,7 +7,7 @@ public class Gradenator {
     // This is the entry point of the program.
     public static void main(String[] args) throws FileNotFoundException {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("File Name?");
+        System.out.println("File name?");
         
         // Read file name input from the user
         String fileName = scanner.nextLine();
