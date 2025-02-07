@@ -1,0 +1,42 @@
+\\ ICA #6 
+\\ WORD OF THE DAY: JUNIT
+\\ Part 1
+public static int findMax(int[] arr, int index){
+  \\ base call
+  if (index == arr.length - 1 ){
+    return arr[index];
+  }
+  \\ recursive call
+  int nextMax = findMax(arr, index + 1);
+  if (arr[index] > nextMax){
+  return arr[index];
+  } else {
+    return nextMax;
+    }
+}
+
+\\ Part 2
+\\ To approach this problem if the array was only the argument
+\\ You would create a new array each time minus the first index
+public static int findMax(int[] arr){
+  \\ base call
+  if (arr.length == 1){
+    return arr[0];
+  }
+  int[] newArr = new int[arr.length-1];
+  for (int i = 1; i < arr.length; i++){
+    newArr[i-1] = arr[i];
+  }
+  \\ recursive call
+  int nextMax = findMax(newArr);
+  if (arr[0] > nextMax){
+    return arr[0];
+    } else {
+      return nextMax
+    }
+}
+
+\\ Part 3
+public static String replaceChar(String line, String origchar, String newchar){
+  
+}
