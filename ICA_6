@@ -49,3 +49,16 @@ public static String replaceChar(String mySr, char oldChar, char newChar){
       return myStr.charAt(0) + replaceChar(myStr.substring[1], oldChar, newChar);
       }
 }
+
+\\ Part 4
+@Test
+public void test_replaceChar_test2() {
+    String result = Recursion.replaceChar("hello world", 'z', 'x');
+    assertEquals("hello world", result);  
+
+@Test
+public void test_replaceChar_test3() {
+    String result = Recursion.replaceChar("", 'a', 'b');
+    assertEquals("", result);  // Empty string, so the result should also be an empty string
+}
+}
