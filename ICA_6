@@ -2,7 +2,7 @@
 \\ WORD OF THE DAY: JUNIT
 \\ Part 1
 public static int findMax(int[] arr, int index){
-  \\ base call
+  \\ base case
   if (index == arr.length - 1 ){
     return arr[index];
   }
@@ -19,7 +19,7 @@ public static int findMax(int[] arr, int index){
 \\ To approach this problem if the array was only the argument
 \\ You would create a new array each time minus the first index
 public static int findMax(int[] arr){
-  \\ base call
+  \\ base case
   if (arr.length == 1){
     return arr[0];
   }
@@ -37,6 +37,15 @@ public static int findMax(int[] arr){
 }
 
 \\ Part 3
-public static String replaceChar(String line, String origchar, String newchar){
-  
+public static String replaceChar(String mySr, char oldChar, char newChar){
+  \\ base case
+  if (myStr.isEmpty()){
+    return myStr
+  }
+  \\ recursive call
+  if (myStr.charAt(0) == oldChar){
+    return newChar + replaceChar(myStr.substring[1], oldChar, newChar);
+  } else {
+      return myStr.charAt(0) + replaceChar(myStr.substring[1], oldChar, newChar);
+      }
 }
