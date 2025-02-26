@@ -9,7 +9,13 @@ STARTER FILE ANALYSIS:
     Function: Executes MAIN METHOD.
 
   CLASS NAME: userInterface
+    Args:     User currentUser: a class instance representing the current user.
+              UserCollection allUsers: a class instance representing a collection of all users.
+              Library lib: a class instance representing all available songs.
+              Scanner input: a Scanner object for user input.
+              
+    Details: Initalizes the selection at 0, meaning no option has been chosen. Displays greeting message. 
+             It runs continuously until the selection equals EXIT_SELECTION, a variable of 10. (Initialized in class PA4MAIN)
+             The selected executes different features, then uses input.nextInt() to read the next choice. If not valid integer, catches error with message.
+              
     Function: Takes main method result (a selection of 10 choices) and executes a method depending on which choice is selected.
-              It catches invalid commands.
-              Otherwise, if option 10, which is the exit command, it exits the while loop and prints "Bye!".
-            
