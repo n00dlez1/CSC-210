@@ -57,6 +57,19 @@ CLASS NAME: Playlist.java
       remove it from arrayList..
       
 
-    
+  CLASS NAME: User.java
+    Constructors:
+      public User(String name, String password)
+        *note, there should be an instance variable for a List containing all Playlists..
 
+    Methods:
+      public String getName()
+      public boolean attemptLogin(String password)
+      public void addPlaylist(Playlist newPlaylist)
+      public List<Playlist> getPlayLists()
+        returns list of playlists for this user.
+      public void selectPlayList(String name)
+        takes the name and finds the specific playlist using Playlist method .getName(). (from list of user playlists)
+        then uses .play() on that playlist.
+      public String toString()
                     
