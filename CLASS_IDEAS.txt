@@ -39,5 +39,24 @@ CLASS NAME: Library.java
                     Parse through the entirety of the array AGAIN:
                       Use getSong to pull the actual OBJECT. 
                       Call toString on the SongObject.
+CLASS NAME: Playlist.java
+  Constructors: 
+    public Playlist (String name)
+      *note, this constructor is used when creating the playlist with just the name such as in createPlayList method in PA4MAIN
+      Initialize this ArrayList as empty.
+    public Playlist (String name, List<Song> contents)  
+
+  Methods:
+    public String getName()
+      simple getter method. no print statements, just return name of playlist.
+    public void addSong(Song song)
+      maybe create an ArrayList of Songs within the playlist.
+    public void play()
+      *NOTE: Must be "played" in a similar fashion as the toString method in Library. Maybe try the same method.
+    public void removeSong(Song song)
+      remove it from arrayList..
+      
+
+    
 
                     
