@@ -5,16 +5,16 @@ Let''s begin.
 
 STARTER FILE ANALYSIS:
 
-  CLASS NAME: PA4MAIN
+ALL WITHIN CLASS PA4MAIN
 
-  METHOD NAME: main
+METHOD NAME: main
     Function: 
 
-  METHOD NAME: prompt
+METHOD NAME: prompt
     Function: 
         Prints all options. (Called in userInterface)
 
-  METHOD NAME: userInterface
+METHOD NAME: userInterface
     Args:     
         User currentUser: a class instance representing the current user.       
         UserCollection allUsers: a class instance representing a collection of all users.
@@ -33,7 +33,7 @@ STARTER FILE ANALYSIS:
     Returns: 
         Void
 
-  METHOD NAME: initSongLibrary
+METHOD NAME: initSongLibrary
     Args: 
         String filename: name of file pulled from ?
 
@@ -47,3 +47,15 @@ STARTER FILE ANALYSIS:
 
     Returns: 
         instance of populated Library class
+
+METHOD NAME: showPlayLists
+    Args: 
+        User curr: current user
+    Details:
+        Checks if user is logged In. (Using different method)
+        Calls method of User class on current user .getPlaylists()
+        Prints name of each playlist.
+    Functions: 
+        Prints name of each playlist for the current user.
+    Returns:
+        Void
