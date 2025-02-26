@@ -72,4 +72,6 @@ CLASS NAME: Playlist.java
         takes the name and finds the specific playlist using Playlist method .getName(). (from list of user playlists)
         then uses .play() on that playlist.
       public String toString()
+        FORMAT: "name, numPlayLists playlists" EX: "Noodles, 4 playlists"
+        *IDEA: for the numPlayLists, call getPlayLists and run .size(), and use that.
                     
