@@ -96,4 +96,8 @@ METHOD NAME: playSong
         Scanner in: scanner object
         Library allSongs: instance of Library class
     Details:
-        Checks if user is logged in, then prints allSongs.
+        Checks if user is logged in.
+        Prints message asking for song name.
+        Reads using .nextLine().
+        Finds and creates Song instance from Library using the passed name.
+        Checks if song exists before playing it using Song class method play().
