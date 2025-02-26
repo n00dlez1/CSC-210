@@ -62,7 +62,21 @@ METHOD NAME: showPlayLists
 METHOD NAME: playPlayList
     Args:     
         User curr: current user (instance of User class)
+        Scanner in: scanner class for user input
     Details:
         Prints message to ask for the playlist name to be played.
         Reads the user input (from scanner created elsewhere)
         Calls User class method .selectPlaylist(name)
+METHOD NAME: createPlayList
+    Args:     
+        User curr: current user (instance of User class)
+        Library songs: instance of Library class
+        Scanner in: scanner object for user input
+    Details:
+        Prints message to ask for the playlist name to be created, then creates it.
+        Creates Song instance and allows user to input song name. Checks if song exists in the Library.
+            If it does, adds song to the created playlist.
+            Otherwise, it does not add anything. 
+            It continues until the user enters nothing.
+        Adds Playlist to the specific user.
+        Prints statement declaring the playlist has been created.
