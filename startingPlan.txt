@@ -101,3 +101,12 @@ METHOD NAME: playSong
         Reads using .nextLine().
         Finds and creates Song instance from Library using the passed name.
         Checks if song exists before playing it using Song class method play().
+
+METHOD NAME: songExists
+    Args:
+        Song s: instance of Song class
+    Details:    
+        Returns true if song exists. False if not, and prints song not found statement.
+    Returns: 
+        Boolean depending on if song exists or not.
+
