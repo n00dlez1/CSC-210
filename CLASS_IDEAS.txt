@@ -1,0 +1,29 @@
+Now that I have finished analyzing the starter file provided, I will move onto brainstorming what to do for the classes required.
+
+CLASS NAME: Song.java
+  Arguments: public Song(String title, String artist)
+
+  Methods: 
+    public String getTitle()
+      simple getter method. no print statements, just return.
+    public String getArtist()
+      simple getter method. no print statements, just return.
+    public int getTimesPlayed()
+      simple getter method. no print statements, just return.
+      *IDEA: the class song should have a private instance variable set at 0 upon creation. 
+             everytime the method Play() is called, increment the variable by 1. (AFTER, not before)
+    public void Play()
+      Print description of the song. In this instance, just call toString().
+    public String toString()
+      FORMATTED LIKE: "Title by Artist, timesPlayed play(s)" EX: "American Pie by Don McLean, 100 play(s)"
+
+CLASS NAME: Library.java
+  Arguments: public Library() (None)
+
+  Methods:
+    public Song getSong(String title)
+    public void addSong(Song song)
+    public void removeSong(Song song)
+    public String toString()
+      *NOTE: Every String within the Library must be called with .toString(), with a newline for each. 
+             It must be printed in alphabetical order by song name... So how do I keep it in alphabetical order?
