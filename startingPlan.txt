@@ -6,9 +6,14 @@ Let''s begin.
 STARTER FILE ANALYSIS:
 
   CLASS NAME: PA4MAIN
-    Function: Executes MAIN METHOD.
 
-  CLASS NAME: userInterface
+  METHOD NAME: main
+    Function: 
+
+  METHOD NAME: prompt
+    Function: Prints all options. (Called in userInterface)
+
+  METHOD NAME: userInterface
     Args:     User currentUser: a class instance representing the current user.
               UserCollection allUsers: a class instance representing a collection of all users.
               Library lib: a class instance representing all available songs.
@@ -17,5 +22,6 @@ STARTER FILE ANALYSIS:
     Details: Initalizes the selection at 0, meaning no option has been chosen. Displays greeting message. 
              It runs continuously until the selection equals EXIT_SELECTION, a variable of 10. (Initialized in class PA4MAIN)
              The selected executes different features, then uses input.nextInt() to read the next choice. If not valid integer, catches error with message.
+             Calls prompt method.
               
     Function: Takes main method result (a selection of 10 choices) and executes a method depending on which choice is selected.
