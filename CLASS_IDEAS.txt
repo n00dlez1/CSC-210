@@ -22,8 +22,14 @@ CLASS NAME: Library.java
 
   Methods:
     public Song getSong(String title)
+      Check the ArrayList (as described in addSong method) 
+        check by using .getTitle() (Song method) and comparing it to passed argument. If matching, return that object.
+        Otherwise, if no match found, return null.
     public void addSong(Song song)
+      add song to Library using an ArrayList (because size can change). Song objects.
     public void removeSong(Song song)
+      Use same method as described in getSong, but just remove the song if found.
+        *Use ArrayList method remove()
     public String toString()
       *NOTE: Every String within the Library must be called with .toString(), with a newline for each. 
              It must be printed in alphabetical order by song name... So how do I keep it in alphabetical order?
