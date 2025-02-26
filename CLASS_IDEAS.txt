@@ -57,7 +57,7 @@ CLASS NAME: Playlist.java
       remove it from arrayList..
       
 
-  CLASS NAME: User.java
+CLASS NAME: User.java
     Constructors:
       public User(String name, String password)
         *note, there should be an instance variable for a List containing all Playlists..
@@ -65,6 +65,7 @@ CLASS NAME: Playlist.java
     Methods:
       public String getName()
       public boolean attemptLogin(String password)
+        return true if password is valid. just check if passed arg is the same as the class instance.
       public void addPlaylist(Playlist newPlaylist)
       public List<Playlist> getPlayLists()
         returns list of playlists for this user.
@@ -74,4 +75,28 @@ CLASS NAME: Playlist.java
       public String toString()
         FORMAT: "name, numPlayLists playlists" EX: "Noodles, 4 playlists"
         *IDEA: for the numPlayLists, call getPlayLists and run .size(), and use that.
+
+CLASS NAME: UserCollection.java
+    Constructors:
+      public UserCollection() (no args)
+
+    Methods:
+      public boolean UserExists(String username)
+        *IDEA: just check for user by using .getName() User method and comparing it to argument.
+               For this to work, need to create a List of all Users as the instance variable for UserCollection().
+      public User login(String username, String password)
+        return user if the log in is valid, return null otherwise.
+        *IDEA: check if UserExists using the username, then pass the User method attemptLogin using the password.
+          If it returns true, meaning the password worked, then return that User instance.
+      public void addUser(User add)
+        this takes a User object that was already created, just add that user to the list of users in the usercollection.
+      public String toString()
+        FORMAT: "user1: playlistsCount playlists, user2: playlistsCount playlists" EX: "Noodles: 5 playlists"
+        SHOULD BE PRINTED IN ALPHABETICAL ORDER OF USERS.
+          So, similar as library. Get name of each user, add it to array, sort array, then pull it by each user with their toString() method.
+          However, replace the comma with ":".
+          So.. start the string "{" 
+          Add, until array reaches the end, the .toString() for each user but with the replacement as described. Add a "," after.
+          When array is completely parsed through, add the other end, "}"
+        
                     
