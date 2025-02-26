@@ -110,3 +110,11 @@ METHOD NAME: songExists
     Returns: 
         Boolean depending on if song exists or not.
 
+METHOD NAME: addNewUser
+    Args:
+        UserCollection all: instance of UserCollection class
+        Scanner in: scanner object
+    Details:    
+        Prints statement asking for user name. Then reads user name from next line. Same for password.
+        Creates new User instance with the (name, password) as read. 
+        Prints statement declaring the user created.
