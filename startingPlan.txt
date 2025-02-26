@@ -1,0 +1,15 @@
+Okay.. So we have a starter file that already has some functionality and we need to create classes that can function in conjunction with this existing functionality.
+So, the plan is to first look at and understand what is happening in the starter file, then move onto creating the requested classes..
+
+Let''s begin.
+
+STARTER FILE ANALYSIS:
+
+  CLASS NAME: PA4MAIN
+    Function: Executes MAIN METHOD.
+
+  CLASS NAME: userInterface
+    Function: Takes main method result (a selection of 10 choices) and executes a method depending on which choice is selected.
+              It catches invalid commands.
+              Otherwise, if option 10, which is the exit command, it exits the while loop and prints "Bye!".
+            
