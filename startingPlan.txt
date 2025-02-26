@@ -50,7 +50,7 @@ METHOD NAME: initSongLibrary
 
 METHOD NAME: showPlayLists
     Args: 
-        User curr: current user
+        User curr: current user (instance of User class)
     Details:
         Checks if user is logged In. (Using different method)
         Calls method of User class on current user .getPlaylists()
@@ -59,3 +59,10 @@ METHOD NAME: showPlayLists
         Prints name of each playlist for the current user.
     Returns:
         Void
+METHOD NAME: playPlayList
+    Args:     
+        User curr: current user (instance of User class)
+    Details:
+        Prints message to ask for the playlist name to be played.
+        Reads the user input (from scanner created elsewhere)
+        Calls User class method .selectPlaylist(name)
