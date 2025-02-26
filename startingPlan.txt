@@ -59,6 +59,7 @@ METHOD NAME: showPlayLists
         Prints name of each playlist for the current user.
     Returns:
         Void
+
 METHOD NAME: playPlayList
     Args:     
         User curr: current user (instance of User class)
@@ -67,6 +68,7 @@ METHOD NAME: playPlayList
         Prints message to ask for the playlist name to be played.
         Reads the user input (from scanner created elsewhere)
         Calls User class method .selectPlaylist(name)
+
 METHOD NAME: createPlayList
     Args:     
         User curr: current user (instance of User class)
@@ -80,3 +82,12 @@ METHOD NAME: createPlayList
             It continues until the user enters nothing.
         Adds Playlist to the specific user.
         Prints statement declaring the playlist has been created.
+
+METHOD NAME: showSongs
+    Args:     
+        User curr: current user (instance of User class)
+        Library allSongs: scanner class for user input
+    Details:
+        Checks if user is logged in, then prints allSongs.
+
+
