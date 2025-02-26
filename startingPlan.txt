@@ -63,7 +63,7 @@ METHOD NAME: showPlayLists
 METHOD NAME: playPlayList
     Args:     
         User curr: current user (instance of User class)
-        Scanner in: scanner class for user input
+        Scanner in: scanner object
     Details:
         Prints message to ask for the playlist name to be played.
         Reads the user input (from scanner created elsewhere)
@@ -73,7 +73,7 @@ METHOD NAME: createPlayList
     Args:     
         User curr: current user (instance of User class)
         Library songs: instance of Library class
-        Scanner in: scanner object for user input
+        Scanner in: scanner object
     Details:
         Prints message to ask for the playlist name to be created, then creates it.
         Creates Song instance and allows user to input song name. Checks if song exists in the Library.
@@ -86,8 +86,14 @@ METHOD NAME: createPlayList
 METHOD NAME: showSongs
     Args:     
         User curr: current user (instance of User class)
-        Library allSongs: scanner class for user input
+        Library allSongs: instance of Library class
     Details:
         Checks if user is logged in, then prints allSongs.
 
-
+METHOD NAME: playSong
+    Args:     
+        User curr: current user (instance of User class)
+        Scanner in: scanner object
+        Library allSongs: instance of Library class
+    Details:
+        Checks if user is logged in, then prints allSongs.
