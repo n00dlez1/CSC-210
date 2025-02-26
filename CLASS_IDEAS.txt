@@ -27,3 +27,11 @@ CLASS NAME: Library.java
     public String toString()
       *NOTE: Every String within the Library must be called with .toString(), with a newline for each. 
              It must be printed in alphabetical order by song name... So how do I keep it in alphabetical order?
+                BRAINSTORM:   
+                    When calling toString, parse through the entirety of the Library and add ONLY the TITLES of each song to an array.
+                    Use the sort method of an array to sort it alphabetically.. 
+                    Parse through the entirety of the array AGAIN:
+                      Use getSong to pull the actual OBJECT. 
+                      Call toString on the SongObject.
+
+                    
