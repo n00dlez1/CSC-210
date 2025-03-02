@@ -1,0 +1,5 @@
+Let's look at the current assignment guidelines, I will fill in what my thoughts are and any notes.
+
+Design a CLASS HIERACHY. <- Important to pick efficient and well-rounded design, 20% of grade.
+
+Simplified version of the UML class diagrams (Lecture)
