@@ -51,3 +51,19 @@ BRAINSTORMING:
   The GROW HARVEST AND PICK commands should pass through the Garden object FIRST.
   Just use a single method for each command, but with condition handling. check args.
 
+IDEA!
+  For the HARVEST, PICK, and CUT commands, use switch and case. In garden, it will parse the command and decide which category to apply it to 
+  EX:
+  case "HARVEST":
+      return "vegetable"
+
+ANOTHER IDEA:
+    EXPAND ONTO THIS. check the type of argument next to HARVEST, if it is coordinates, do that, if a vegetable type, look into that specific type.
+    if a type is specified, use instanceOf to check all plants in the garden if they are that category, then check the name to compare to plant type.
+    use the removal method on each one.
+
+  It then will apply the removal method to that category. the removal method should be in the interface of plant.
+    This way, every plant should have in its interface the GROW and REMOVAL command. 
+        **EVERY PLANT HAS A DIFFERENT WAY OF GROWING, THIS CAN BE DONE IN THE ABSTRACT.
+  But to find the category -- each flower, veggie, and tree, should have a .getCategory() method in the abstract.
+
