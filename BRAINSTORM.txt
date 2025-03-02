@@ -3,3 +3,51 @@ Let's look at the current assignment guidelines, I will fill in what my thoughts
 Design a CLASS HIERACHY. <- Important to pick efficient and well-rounded design, 20% of grade.
 
 Simplified version of the UML class diagrams (Lecture)
+
+-> Design class hierachy (UML)
+-> Implement
+-----> Use polymorphism
+-----> Use two-dimensional arrays. (ex. int[][]) 
+
+PA5MAIN.java (main method) should take in a file name. Use ONE scanner instance. be sure to close it.
+
+Input Format:
+rows: 1
+cols: 1
+PLANT (0,0) banana
+PRINT
+GROW 1
+print
+
+*notes:
+  commands can be either lower or uppercase, include cases to handle both. 
+  first line is # of rows (1 is 1 plot, which is 5 rows)
+  second line is # of cols (1 is 1 plot, which is 5 cols)
+  COMMAND line is PLANT (plot_coordinates) PLANT_TYPE --> *NOTE* Not necessarily third, this is actually a COMMAND too, but is just followed by more info.
+    *NOTE* all plots are 5x5 but specific plants have specific positions within, 
+  lines afterward are COMMANDS
+  end program when no more lines read?
+
+CLASS HIERARCHY(s) and IDEAS:
+  INTERFACE: PLANT
+  ABSTRACT CLASSES implements Plant:
+  FLOWERS
+    Sub-classes within abstract class:
+      Iris...
+  TREES
+  VEGETABLES
+
+So, interface plant, abstract classes are the categories, the sub-classes within are the actual types of specific plants.?
+
+
+BUT we also need a Garden object with a 2D array or list of plant objects.
+Screen object with a 2D array of characters that each plant can "print" its current representation into..
+  HINT* [(Plant's row * 5) + cell row][Plant's col * size of plant) + cell col]
+IMPORTANT NOTES: 
+  if not using the PLANT Command,
+  different categories of plants have different positions. (Flowers middle, Veggies top middle, Trees bottom middle)
+
+BRAINSTORMING:
+  The GROW HARVEST AND PICK commands should pass through the Garden object FIRST.
+
+
