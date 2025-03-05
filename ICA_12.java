@@ -1,7 +1,14 @@
 import java.util.Scanner;
 
 enum TrafficLight {
-	RED, YELLOW, GREEN;
+	RED(30), YELLOW(5), GREEN(25);
+	private final int duration;
+	TrafficLight(int duration) {
+		this.duration = duration;
+	}
+	public int getDuration() {
+		return duration;
+	}
 }
 
 public class Traffic {
@@ -18,13 +25,13 @@ public class Traffic {
 		// Switch statement based on traffic light color
 		switch (currentLight) {
 		case RED:
-			System.out.println("Stop! The light is red.");
+			System.out.println("Stop! The light is red." + currentLight.getDuration() + " seconds.");
 			break;
 		case YELLOW:
-			System.out.println("Slow down! The light is yellow.");
+			System.out.println("Slow down! The light is yellow." + currentLight.getDuration() + " seconds.");
 			break;
 		case GREEN:
-			System.out.println("Go! The light is green. ");
+			System.out.println("Go! The light is green. " + currentLight.getDuration() + " seconds.");
 			break;
 		default:
 			System.out.println("Invalid color entered.");
