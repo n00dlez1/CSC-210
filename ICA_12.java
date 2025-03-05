@@ -1,3 +1,16 @@
+// ICA #12 
+//#2
+    //A: NullPointerException (s is declared, but not initialized)
+    //B: StringIndexOutOfBoundsException (out of bounds)
+//#3
+    //Unchecked Exceptions (handled at run-time)
+	//IndexOutofBoundsException
+	//NullPointer Exception
+	//ClassCastException
+    //Checked Exceptions (handled at compile time)
+	//IOException
+	//FileNotFoundException
+	
 import java.util.Scanner;
 
 enum TrafficLight {
@@ -40,3 +53,5 @@ public class Traffic {
 		scanner.close();
 	}
 }
+
+
